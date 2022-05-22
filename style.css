@@ -91,7 +91,37 @@ div#unsa{
     align-items: center;
     margin-bottom: 30px;
 }
+div#acerca{
+    margin-top: 5px;
+    border-radius: 20px;
+    border-style: groove;
+    padding: 5px;
+}
+.btn-edit{
+    display:block;
+    align-items: center;
+    
+}
+.btn-edit img{
+   border-radius: 10px;
+    position:absolute;
+    height: 40px;
+    align-items: center;
+    margin-top: -3%;
+    left: 91%;
+    transition: all 1s ease;
+}
+.btn-edit img:hover{
+    background: hsl(0, 0%, 61%);
+    color: rgb(0, 0, 0) !important;
+  }
 div#exp{
+    margin-top: 5px;
+    border-radius: 20px;
+    border-style: groove;
+    padding: 5px;
+}
+div#educacion{
     margin-top: 5px;
     border-radius: 20px;
     border-style: groove;
