@@ -98,24 +98,26 @@ div#acerca{
     padding: 5px;
 }
 .btn-edit{
-    display:block;
-    align-items: center;
+    display:flex;
+  
     
 }
-.btn-edit img{
-   border-radius: 10px;
+.btn-edit i{
+    color: black;
+    border-radius: 10px;
     position:absolute;
-    height: 40px;
-    align-items: center;
+    height: 20px;
+    width: 20px;
     margin-top: -3%;
     left: 91%;
     transition: all 1s ease;
 }
-.btn-edit img:hover{
+.btn-edit i:hover{
     background: hsl(0, 0%, 61%);
     color: rgb(0, 0, 0) !important;
   }
 div#exp{
+    display: block;
     margin-top: 5px;
     border-radius: 20px;
     border-style: groove;
@@ -132,6 +134,30 @@ div#skills{
     border-radius: 20px;
     border-style: groove;
     padding: 5px;
+}
+#graficos {
+    position: static;
+    display: inline-block; 
+    margin: .5em auto; 
+    padding: 0 .5em .5em; 
+   border-style: double;
+    font: 900 2em/1.2 sans-serif; 
+    float: none;
+    border-radius: .25em; 
+    }
+#graficos .horizontal {
+    display: block; 
+    font: 900 .5em/1 monospace; 
+    text-align: left; 
+    margin: .2em 0; 
+    width: 30em; height: 3em; 
+    background-color: gainsboro; 
+    padding: 0; 
+    border-right: solid 2.5em transparent; /* truco para compensar bg-position */
+    background-image: linear-gradient(red, red); 
+    background-repeat: no-repeat;
+    background-position: 2.5em 0; 
+    background-size: 0 100%; 
 }
 div#proyectos{
     margin-top: 5px;

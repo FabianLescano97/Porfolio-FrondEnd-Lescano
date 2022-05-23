@@ -4,9 +4,11 @@
      <meta charset="UTF-8">
      <meta http-equiv="X-UA-Compatible" content="IE=edge">
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <link rel="stylesheet" href="style.css">
+     
+     <script src="https://kit.fontawesome.com/868cbdaab5.js" crossorigin="anonymous"></script>
      <link href="dist/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-   
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous"> 
+     <link rel="stylesheet" href="style.css">
      <title>Maqueta CV Lescano Fabian</title>
 </head>
 <body>
@@ -38,18 +40,18 @@
      <div id ="banner">
           <img src="Banner.jpg" id="img_banner">
      <img src="https://scontent.fsla1-1.fna.fbcdn.net/v/t31.18172-8/13996126_1253853041325791_3887915796270941034_o.jpg?_nc_cat=109&ccb=1-7&_nc_sid=09cbfe&_nc_eui2=AeHSXDuGdG9suKObNETXYFiJQM-h2NwcwiBAz6HY3BzCIB8L-nk1jiqfrSA-gGrK6PkcniKSk4azZQwMkBhb7U2Y&_nc_ohc=eX0q6jQTwyYAX9URFJy&_nc_ht=scontent.fsla1-1.fna&oh=00_AT8m9dsSXV-ERNjufHOZgVJSu4d-lVGvrl3VAc-WrmySMQ&oe=62ADCD18" class="foto">
+     <div class="btn-edit" onclick="cambiar_parrafo()" style="position:absolute;left:20%;margin-top: 1%;">
+          <a href="#" class="btn-right" >
+               <i class="fa fa-pen"></i>
+         </a>
+     </div>
      <h1 class="titulo">Roque Fabian Lescano</h1>
-     
+  
      <h4 class="soy">Estudiante de la Licenciatura en Energías Renovables 
           <br>Full stack developer jr
           <br>Salta (Argentina)     
      </h4>
-     <div class="btn-edit" onclick="cambiar_parrafo()">
-          <a href="#" class="btn-right" >
-               <img src="edit.png" style="left: 18%; margin-top: -10%;" >
-         </a>
-         
-     </div>
+  
      <div id="unsa">
           <img src="http://www.unsa.edu.ar/wp-content/uploads/2021/09/cropped-escudo_transparente250x400-81x132.jpg">
           <h4 class="unsa">
@@ -67,38 +69,81 @@
           <h1>Acerca de mi</h1>
           <div class="btn-edit" onclick="cambiar_parrafo()">
                <a href="#" class="btn-right" >
-                    <img src="edit.png" >
-              </a>
+                    <i class="fa fa-pen" ></i>
+               </a>
               
           </div>
           <h5 id="text-acerca">Universitario, desarollador y emprendedor. Apasionado de la tecnologia y el desarrollo</h5>
           <input id="edit-acerca" oninput="myFunction2(this.value)" style="display:none"type="text"></input>
+          <input type="file"id="filel"onchange="showFile(this)"style="display:none; margin:3px">
      </div>
+     
 
      <div id="exp">
           <h1>Experiencia</h1>
           <div class="btn-edit" onclick="cambiar_parrafo()">
                <a href="#" class="btn-right" >
-                   <img src="edit.png" >
+                    <i class="fa fa-pen"></i>
               </a>
           </div>
-          <h5 id="text-acerca"> asdasd</h5>
+          <h3 id="text-acerca"> •Dj de Karaoke/ Mozo / Atención al Cliente</h3>
+          <h5 style="color:darkgray; margin-left: 100px;">[2011 – 2012 ] </h5>
+
           <input id="edit-acerca" oninput="myFunction2(this.value)" style="display:none"type="text"></input>
+          <input type="file"id="filel"onchange="showFile(this)"style="display:none; margin:3px">
      </div>
      <div id="educacion">
           <h1>Educacion</h1>
+          <div class="btn-edit" onclick="cambiar_parrafo()">
+               <a href="#" class="btn-right" >
+                    <i class="fa fa-pen"></i>
+              </a>
+          </div>
+          <h5 id="text-acerca">•[2019 – Actualmente]   Universidad Nacional de Salta: Facultad de Ciencias Exactas
+               <br> Carrera: Licenciatura en Energías Renovables. 
+               <br> Cursando: 2º Año.
+               <br>•2021-2022 Argentina Programa - Full Stack Web Developer Jr.
+               </h5>
+          <input id="edit-acerca" oninput="myFunction2(this.value)" style="display:none"type="text"></input>
+          <input type="file"id="filel"onchange="showFile(this)"style="display:none; margin:3px">
      </div>
 
      <div id="skills">
           <h1>Hard Skills & Soft Skills</h1>
+          <div class="btn-edit" onclick="cambiar_parrafo()">
+               <a href="#" class="btn-right" >
+                    <i class="fa fa-pen"></i>
+              </a>
+          </div>
+          <div id="graficos">
+               <p >Resolucion de problemas</p>
+               <figure class="horizontal">1%</figure>
+               <p>Diseño de sistemas</p>
+               <figure class="horizontal">75%</figure>
+               <p>Trabajo en equipo</p>
+               <figure class="horizontal">50%</figure>
+          </div>               
      </div>
      <div id="proyectos">
           <h1>Proyectos</h1>
+          
+          <div class="btn-edit" onclick="cambiar_parrafo()">
+               <a href="#" class="btn-right" >
+                    <i class="fa fa-pen"></i>
+              </a>
+          </div>
+          <h3 id="text-acerca">Proyecto Integrador: Argentina Programa</h3>         
+          <h5 style="color:darkgray; margin-left: 100px;">[2021 – 2022 ] porfolio web </h5>
+          <h3 id="text-acerca">Pagina web de mi micro emprendimiento</h3>         
+          <h5 style="color:darkgray; margin-left: 100px;">@A-media.salta </h5>
+          <input id="edit-acerca" oninput="myFunction2(this.value)" style="display:none"type="text"></input>
+          <input type="file"id="filel"onchange="showFile(this)"style="display:none; margin:3px">
      </div>
 
      <script>
           function cambiar_parrafo(){
                document.getElementById("edit-acerca").style.display="block";
+               document.getElementById("filel").style.display="block";
                let texto=document.getElementById("text-acerca").innerText;
                console.log(texto);
            };
@@ -115,11 +160,13 @@
                logMessage(`Key "${e.key}"released [event:keyup]`) ;
                 if(e.key =="Enter"){
                       document.getElementById("edit-acerca").style.display="none"
+                      document.getElementById("filel").style.display="none"
                           }
                     });
      
                // carga el contenido de un archivo de texto
                //y lo muestra en el parrafo
+               
                function showFile(input) {
                     let file = input.files[0];-
                     alert(`File name: $ {file.name}`);// e.g my.png
@@ -135,7 +182,19 @@
                     console.log(reader.error);
                };
           };
+          function ajusta() {
+               var horizontales = document.querySelectorAll("#graficos .horizontal"); 
+               var elem = 0; 
+          while(elem < horizontales.length) {
+               horizontales[elem].style.transition = "background-size 3s ease-in-out 2s"; 
+               horizontales[elem].style.backgroundSize = horizontales[elem].innerHTML+" 100%"; 
+               elem++; 
+          }; 
+     }
+     onload = ajusta; 
      </script>
+   
      <script src="dist/bootstrap/js/bootstrap.bundle.min.js"></script>
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin= "anonymous"></script>
 </body>
 </html>
