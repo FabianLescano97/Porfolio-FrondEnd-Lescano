@@ -1,0 +1,55 @@
+{
+    "name":"Roque Fabian Lescano",
+    "backImage":"https://fv9-3.failiem.lv/thumb_show.php?i=g2vbz76uc&view",
+    "image":"https://scontent.fsla1-1.fna.fbcdn.net/v/t31.18172-8/13996126_1253853041325791_3887915796270941034_o.jpg?_nc_cat=109&ccb=1-7&_nc_sid=09cbfe&_nc_eui2=AeHSXDuGdG9suKObNETXYFiJQM-h2NwcwiBAz6HY3BzCIB8L-nk1jiqfrSA-gGrK6PkcniKSk4azZQwMkBhb7U2Y&_nc_ohc=eX0q6jQTwyYAX9URFJy&_nc_ht=scontent.fsla1-1.fna&oh=00_AT8m9dsSXV-ERNjufHOZgVJSu4d-lVGvrl3VAc-WrmySMQ&oe=62ADCD18",
+    "image2":"https://fv9-4.failiem.lv/thumb_show.php?i=47a2eztu6&view",
+    "position":"Estudiante de la Licenciatura en Energías Renovables",
+    "position2":"Full Stack developer JR",
+    "company":{
+        "name":"Universidad Nacional de Salta",
+        "img":"http://www.unsa.edu.ar/wp-content/uploads/2021/09/cropped-escudo_transparente250x400-81x132.jpg",
+        "url":"#"
+    },
+    "ubication":"Salta (Argentina)",
+    "about":"Universitario, desarollador y emprendedor. Apasionado de la tecnologia y el desarrollo",
+    
+    "experience":[{
+        "position":"Dj de Karaoke/ Mozo / Atención al Cliente",
+        "company":"Karaoke Rancho Juancito",
+        "mode":"Fines de semana",
+        "start":"2012",
+        "end":"2013",
+        "lugar":"General Enrique Mosconi-Salta-Argentina"
+    },{
+        "position":"Conserje - Auxiliar de limpieza",
+        "company":"Elephant (boliche)",
+        "mode":"Fines de semana",
+        "start":"2018",
+        "end":"2019",
+        "lugar":"Salta Capital-Argentina"
+    }],
+    "educacion":[{
+        "position":"Licenciatura en Energías Renovables",
+        "company":"Universidad Nacional de Salta",
+        "start":"2019",
+        "end":"Actualmente",
+        "lugar":"Salta Capital-Argentina"
+    },{
+        "position":"Tecnico en Instalaciones y proyectos Electromecanicos",
+        "company":"Escuela de Educación Tecnica Vespucio N° 3136",
+        "start":"2009",
+        "end":"2014",
+        "lugar":"General Enrique Mosconi-Salta-Argentina"
+    }],
+    "proyectos":[{
+        "position":"Proyecto Integrador: Argentina Programa",
+        "start":"2021",
+        "end":"2022",
+        "lugar":"Porfolio web"
+    },{
+        "position":"Pagina web de mi micro emprendimiento",
+        "start":"2022",
+        "end":"Actualmente",
+        "lugar":"@A-media.salta"
+    }]
+}

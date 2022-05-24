@@ -1,0 +1,36 @@
+<div class="card mat-card">
+     <div id="exp">
+        <h1>Hard Skills & Soft Skills</h1>
+        
+             <a href="#" class="plus" onclick="cambiar_parrafo()" >
+                  <i class="fab fa-plus fa-3x" ></i>
+            </a>
+        
+        <div>
+            
+            <ul class="items-list">
+              
+                <li *ngFor="let educacion of edulist">
+                   
+                    <div class="data-container">
+                        
+                            <div class="list-info" style="color:black;">
+                                <div>
+                                <h3>{{educacion.position}}</h3>
+                                <p>{{educacion.company}} </p>
+                                <h5 style="color:darkgray;">{{educacion.lugar}}: <time>{{educacion.start}}</time> - <time>{{educacion.end}}</time></h5>
+                                </div>
+                            </div>
+                            <div class="data-control">
+                                <div class="btn-edit">
+                                    <a href="#" class="btn-rigth"><i class="fa fa-pen"></i></a>
+                                    <a href="#" class="btn-rigth"><i class="fa fa-trash" style="margin-left:2% ;"></i></a>
+                                </div>
+                            </div>
+                    </div>
+                  
+                </li>
+            </ul>
+        </div>
+     </div>
+    </div>
