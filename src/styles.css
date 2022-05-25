@@ -146,36 +146,7 @@ div#educacion{
     border-style: groove;
     padding: 5px;
 }
-div#skills{
-    margin-top: 5px;
-    border-radius: 20px;
-    border-style: groove;
-    padding: 5px;
-}
-#graficos {
-    position: static;
-    display: inline-block; 
-    margin: .5em auto; 
-    padding: 0 .5em .5em; 
-   border-style: double;
-    font: 900 2em/1.2 sans-serif; 
-    float: none;
-    border-radius: .25em; 
-    }
-#graficos .horizontal {
-    display: block; 
-    font: 900 .5em/1 monospace; 
-    text-align: left; 
-    margin: .2em 0; 
-    width: 30em; height: 3em; 
-    background-color: gainsboro; 
-    padding: 0; 
-    border-right: solid 2.5em transparent; /* truco para compensar bg-position */
-    background-image: linear-gradient(red, red); 
-    background-repeat: no-repeat;
-    background-position: 2.5em 0; 
-    background-size: 0 100%; 
-}
+
 div#proyectos{
     margin-top: 5px;
     border-radius: 20px;

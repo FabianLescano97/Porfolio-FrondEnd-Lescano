@@ -12,7 +12,6 @@
     },
     "ubication":"Salta (Argentina)",
     "about":"Universitario, desarollador y emprendedor. Apasionado de la tecnologia y el desarrollo",
-    
     "experience":[{
         "position":"Dj de Karaoke/ Mozo / Atención al Cliente",
         "company":"Karaoke Rancho Juancito",
@@ -51,5 +50,15 @@
         "start":"2022",
         "end":"Actualmente",
         "lugar":"@A-media.salta"
+    }],
+    "skills":[{
+        "position":"Resolucion de problemas",
+        "porcentaje":"70%"
+    },{
+        "position":"Frond-end",
+        "porcentaje":"60%"
+    },{
+        "position":"Back-end",
+        "porcentaje":"30%"
     }]
 }
