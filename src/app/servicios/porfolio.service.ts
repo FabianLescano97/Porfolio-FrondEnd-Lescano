@@ -12,4 +12,7 @@ export class PorfolioService {
   obtenerDatos():Observable<any>{
     return this.http.get('./assets/data/data.json');
   }
+  eliminar(id:any):Observable<any> {
+    return this.http.delete('./assets/data/data.json'+id);
+  }
 }

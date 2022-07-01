@@ -1,6 +1,7 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, Input, NgModule, OnInit, Type } from '@angular/core';
 import { PorfolioService } from 'src/app/servicios/porfolio.service';
-import { HttpClientModule } from '@angular/common/http';
+
+
 @Component({
   selector: 'app-acerca',
   templateUrl: './acerca.component.html',
@@ -8,37 +9,69 @@ import { HttpClientModule } from '@angular/common/http';
 })
 export class AcercaComponent implements OnInit {
   
-  @Input()acerca:any;
-  
+  acerca:any;
+ 
   constructor(private datosPorfolio:PorfolioService) { }
 
   ngOnInit(): void {
     this.datosPorfolio.obtenerDatos().subscribe(data =>{
       console.log(data);
-      this.acerca=data;
+      this.acerca=data.about;
     });
     
+    
   }
-}
-
-
-function cambiar_parrafo():void{
-  document.getElementById("edit-acerca");
-  document.getElementById("filel");
-  let texto=document.getElementById("text-acerca");
-  console.log(texto);
-};
-cambiar_parrafo();
-
-
-function myFunction2(valor:any):void{
-       document.getElementById("text-acerca");
+  oculto=true;
+  keypress(event:any){
+    console.log("keyup");
+    
+    this.oculto=!this.oculto;
+    
   }
-  myFunction2
+  
+  read(event:any){
+  
+    let reader = new FileReader();
+    reader.onload=function(progressEvent): void{
+      let ouput:any=document.getElementById("filel");
+      ouput.src=reader.result;
+      console.log(reader.result);
+      let salida:any = document.getElementById("edit-acerca")
+      salida.innerText=reader.result;
+      
+    }
+    
+    if(event.target.files[0]){
+     reader.readAsText(event.target.files[0])
 
-function logMessage(message:any){
-  console.log(message+"<br>");
+    }
+  
+    this.acerca.innerText=reader.result
+    this.oculto=!this.oculto;
   }
+ 
+  
+ /*document.getElementById("myBtn").addEventListener("click", function() {
+
+    var reader = new FileReader();
+    reader.addEventListener('load', function() {
+      document.getElementById('file').innerText = this.result;
+    });
+    reader.readAsText(document.querySelector('input').files[0]);
+  
+  });
+  /*
+  reader = new FileReader();
+   file=document.getElementById("filel")
+  texto= this.file
+  read(event:any): void{
+    this.reader.readAsText(this.texto)
+    this.reader.result
+  this.oculto=!this.oculto;
+  }*/
+    
+
+/*
  logMessage
   // controla si se presiono un enter
  /*let textarea:any=document.getElementById( "edit-acerca")
@@ -50,7 +83,7 @@ function logMessage(message:any){
          document.getElementById("filel")
              }
        });
-*/
+
   // carga el contenido de un archivo de texto
   //y lo muestra en el parrafo
   
@@ -69,4 +102,4 @@ function logMessage(message:any){
        console.log(reader.error);
   };
 };
-
+*/}

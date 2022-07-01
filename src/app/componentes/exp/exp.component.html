@@ -5,30 +5,43 @@
          <a href="#" class="plus" onclick="cambiar_parrafo()" >
               <i class="fab fa-plus fa-3x" ></i>
         </a>
-    
+        <div class="data-control">
+            <div class="btn-edit" >
+                <a class="btn-rigth" (click)="oculto=!oculto"><i class="fa fa-pen"></i></a>
+            </div>
+        </div>
     <div>
         
         <ul class="items-list">
           
             <li *ngFor="let experience of explist">
-               
+              
                 <div class="data-container">
                     
                         <div class="list-info" style="color:black;">
-                            <div>
+                            <div >
+                      
                             <h3>{{experience.position}}</h3>
+                            <input id="edit-acerca"  [(ngModel)]="experience.position" [hidden]="oculto" type="text" (change)="keypress($event)">
                             <p>{{experience.company}} - <span>{{experience.mode}}</span></p>
+                            <input id="edit-acerca"  [(ngModel)]="experience.company" [hidden]="oculto" type="text" (change)="keypress($event)"> <input id="edit-acerca"  [(ngModel)]="experience.mode" [hidden]="oculto" type="text" (change)="keypress($event)" >
                             <h5 style="color:darkgray;">{{experience.lugar}}: <time>{{experience.start}}</time> - <time>{{experience.end}}</time></h5>
+                            <input id="edit-acerca"  [(ngModel)]="experience.lugar" [hidden]="oculto" type="text" (change)="keypress($event)">  
+                            <input id="edit-acerca"  [(ngModel)]="experience.start" [hidden]="oculto" type="text" (change)="keypress($event)"> <input id="edit-acerca"  [(ngModel)]="experience.end" [hidden]="oculto" type="text" (change)="keypress($event)" >
                             </div>
+                            <td>
+                            <div class="data-control">
+                                <div class="btn-edit" >
+                                    <a class="btn-rigth">
+                                    <i class="fa fa-trash" style="margin-left:2% ;" 
+                                      (click)="eliminar(experience.id)"  ></i></a>
+                                </div>
+                            </div></td>
                         </div>
-                        <div class="data-control">
-                            <div class="btn-edit">
-                                <a href="#" class="btn-rigth"><i class="fa fa-pen"></i></a>
-                                <a href="#" class="btn-rigth"><i class="fa fa-trash" style="margin-left:2% ;"></i></a>
-                            </div>
-                        </div>
+                  
+                        
                 </div>
-              
+                
             </li>
         </ul>
     </div>

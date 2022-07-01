@@ -1,26 +1,21 @@
 <div id ="banner">
-    <img [src]="miporfolio.backImage" class="kk" id="img_banner">
-<img [src]="miporfolio.image" class="foto">
+    <img [src]="miporfolio?.backimage" id="img_banner" >
+    <img [src]="miporfolio?.image" class="foto">
 <div class="btn-edit" onclick="cambiar_parrafo()" style="position:absolute;left:35%;margin-top: 1%;">
     <a href="#" class="btn-right" >
          <i class="fa fa-pen"></i>
    </a>
 </div>
-<h1 class="titulo">{{miporfolio.name}}</h1>
+<h1 class="titulo">{{miporfolio?.name}}</h1>
 
-<h4 class="soy">{{miporfolio.position}}
-    <br>{{miporfolio.position2}}
-    <br>{{miporfolio.ubication}}   
+<h4 class="soy">{{miporfolio?.position}}
+    <br>{{miporfolio?.position2}}
+    <br>{{miporfolio?.ubication}}   
 </h4>
 
 <div id="unsa">
-    <img [src]="miporfolio.company.img">
+    <img [src]="miporfolio?.company.img">
     <h4 class="unsa">
-         {{miporfolio.company.name}}
+         {{miporfolio?.company.name}}
     </h4>
-</div>
-
-<button type="button" class="btn btn-primary">Tengo interes en</button>
-<button type="button" class="btn btn-light">Añadir sección </button>
-
 </div>

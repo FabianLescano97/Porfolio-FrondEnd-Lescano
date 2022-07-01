@@ -1,0 +1,18 @@
+.btn-edit{
+  display:flex;
+  align-items: center;
+}
+.btn-edit i{
+  color: black;
+  border-radius: 10px;
+  position:absolute;
+  height: 20px;
+  width: 20px;
+  margin-top: -2%;
+  left: 87%;
+  transition: all 1s ease;
+}
+.btn-edit i:hover{
+  background: hsl(0, 0%, 61%);
+  color: rgb(0, 0, 0) !important;
+}
